@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <%- include('../partials/header.ejs')%>
+
+        <section id="mid">
+            <div class="container">
+                <div class="row">
+                    <%- include('../partials/left.ejs')%>
+                        <div class="col-md-9">
+                            <h2 class="text-center mt-3 mb-4">Add New Entry Here!!</h2>
+                            <h4 class="text-center"><%=message%></h4>
+                            <form action="" method="post">
+                                <label for="">Vechile No</label>
+                                <input type="text" name="vno" id="" class="form-control">
+                                <label for="">Vechile Type</label>
+                                <select name="vtype" id="" class="form-select">
+                                    <option value="2w">Two Wheeler</option>
+                                    <option value="3w">Three Wheeler</option>
+                                    <option value="4w">Four Wheeler</option>
+                                    <option value="hw">Heavy Wheeler</option>
+                                    <option value="lw">Light Wheeler</option>
+                                    <option value="others">Others</option>
+                                </select>
+                                <button type="submit" class="btn btn-outline-info mt-2 mb-4 form-control">Add New</button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include('../partials/footer.ejs')%>
+
+            <!-- ////////////////////This is bs script/////////////////////////////////// -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+#login {
+    display: flex;
+    align-items: center;
+    height: 77vh;
+}
+
+#header {
+    background: linear-gradient(360deg, rgba(13, 50, 103, 1) 20%, rgba(0, 212, 255, 1) 100%);
+}
+
+#header .row {
+    padding: 10px 0;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+}
+
+#header .row a {
+    float: right;
+}
+
+#footer {
+    background: linear-gradient(360deg, rgba(13, 50, 103, 1) 20%, rgba(0, 212, 255, 1) 100%);
+}
+
+#footer .row {
+    padding: 10px 0;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.col-md-4 a i:hover{
+    color: red !important;
+}
+
+.forCenter{
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
